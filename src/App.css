@@ -1,0 +1,303 @@
+
+.flex-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.flex-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.flex-horizontal-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-horizontal-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow-y: scroll;
+  align-content: flex-start;
+}
+
+.main-container {
+  /* margin: 10px; */
+  align-items: flex-start;
+
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 100vh;
+  flex-grow: 1;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: #282c34;
+}
+
+.skill-button {
+  width: 64px;
+  height: 64px;
+
+  margin: 4px;
+}
+
+/* TOOLTIP */
+.tooltip {
+  width: 416px;
+}
+
+.tooltip-header {
+  /* background-color: #494949; */
+  background-color: transparent;
+  /* margin: 0 -900px; */
+  padding: 0 20px;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tooltip-header-title {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.tooltip-header-bg {
+  background-image: url("images/UI/tooltip_header.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+}
+
+.tooltip-middle {
+  background-image: url("images/UI/tooltip_middle.png");
+  background-position: center;
+  margin-top: -8px;
+  /* margin-bottom: -1px; */
+  padding: 8px 13px 0px 13px;
+  margin-bottom: -10px;
+  width: 389px;
+}
+
+.tooltip-bottom {
+  /* background-color: #252525; */
+  background-color: transparent;
+  margin: 0 -21px;
+  width: 100%;
+  background-image: url("images/UI/tooltip_footer.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 84px;
+  justify-content: center;
+}
+
+.tooltip-bottom-text {
+  padding-top: 24px;
+}
+
+.compact-text {
+  margin: 1px !important;
+}
+
+.dark-hr {
+  border-color: grey;
+  margin: 10px 10px;
+  /* width: 90%; */
+}
+
+.action-point {
+  width: 36px;
+  height: 36px;
+  margin: -5px;
+}
+
+.flex-centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.flaired-checkbox {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+}
+
+.dropdown {
+  margin: 5px;
+  padding: 3px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.styled-tooltip {
+  /* background-color: #333333; */
+  /* background-color: #070300; */
+  /* background-color: linear-gradient(left, transparent 300px,rgba(39,39,39,.5) 300px, rgba(39,39,39,.5) 100%); */
+  max-width: 416px;
+  color: whitesmoke;
+  font-size: 90%;
+  /* border: 1px solid rgb(139, 139, 139); */
+}
+
+.checkboxes-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.styled-tooltip p {
+  margin: 5px 7px;
+}
+
+.cooldown {
+  position: absolute;
+  right: 12px;
+  bottom: 30px;
+  font-size: 180% !important;
+  width: 80px;
+  text-align: center;
+}
+
+.skill-grid {
+  /* margin: 10px; */
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.sidebar {
+  background-color: rgb(65, 64, 64);
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-right: 1px solid black;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text {
+  margin: 7px;
+}
+
+/*  */
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* TEXT */
+.text-small {
+  font-size: 70%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-si-symbol {color: rgb(102, 174, 241)}
+
+.text-pyro {color: rgb(245, 68, 68)}
+.text-geo {color: rgb(168, 127, 65)}
+.text-aero {color: rgb(125, 127, 243)}
+.text-water {color: rgb(53, 201, 238)}
+.text-warfare {color: rgb(197, 102, 102)}
+.text-huntsman {color: rgb(73, 180, 82)}
+.text-poly {color: rgb(207, 199, 90)}
+.text-summon {color: rgb(175, 140, 255)}
+.text-rogue {color: rgb(165, 137, 137)}
+.text-necro {color: rgb(165, 126, 158)}
+
+.text-dmg-armor-magic {color: rgb(76, 200, 216)}
+.text-dmg-armor-phys {color: rgb(184, 184, 184)}
+.text-dmg-phys {color: rgb(184, 184, 184)}
+.text-dmg-pierce {color: rgb(223, 96, 96)}
+.text-dmg-air {color:rgb(125, 127, 243)}
+.text-dmg-water {color: rgb(53, 201, 238)}
+.text-dmg-fire {color: rgb(245, 68, 68)}
+.text-dmg-earth {color: rgb(168, 127, 65)}
+
+.text-battered {color: rgb(241, 107, 107)}
+.text-harried {color: rgb(159, 209, 238)}
+
+.text-ap {color: rgb(170, 228, 123)}
+
+.text-ataxia {color: rgb(241, 107, 107)}
+.text-vulnerable {color: rgb(241, 107, 107)}
+.text-subjugated {color: rgb(241, 107, 107)}
+.text-weakened {color: rgb(241, 107, 107)}
+
+.text-squelched {color: rgb(159, 209, 238)}
+.text-terrified {color: rgb(159, 209, 238)}
+.text-slowed {color: rgb(159, 209, 238)}
+.text-dazzled {color: rgb(159, 209, 238)}
+
+.text-cleanse {color: #6CCBFF}
+
+.text-faded {color: rgb(109, 109, 109) !important}
+
+/*  */
