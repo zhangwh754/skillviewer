@@ -10,7 +10,7 @@ import * as miscData from "./miscData.js"
 // missing statuses
 
 const axios = require('axios').default;
-const RESOURCE_PREPPEND = ""
+const RESOURCE_PREPPEND = "/skillviewer/"
 
 var app;
 
@@ -68,8 +68,6 @@ class App extends React.Component {
       let id = core.addons[index]
       addons.push(data.mods[id])
     }
-
-    console.log(addons)
 
     return addons
   }
