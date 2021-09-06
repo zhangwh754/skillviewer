@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import * as utils from "./utils.js"
 import { SkillTooltip } from './SkillTooltip';
-import { Text, Icon, FlairedCheckbox, Dropdown, DarkHR } from './genericComponents';
+import { Text, Icon, FlairedCheckbox, Dropdown, DarkHR, Tooltip } from './genericComponents';
 import * as miscData from "./miscData.js"
 
 // todo:
@@ -41,7 +41,7 @@ class App extends React.Component {
         "Derpy_Tweaks",
       ],
 
-      schools: ["Warrior"],
+      schools: ["Warrior", "Water", "Earth", "Death", "Rogue", "Ranger", "Fire", "Summoning", "Air", "Polymorph", "Summoning"],
     }
   }
 
@@ -52,7 +52,7 @@ class App extends React.Component {
   toggleMod(id) {
     const state = this.state.modOrder
     if (state.includes(id)) {
-      state.pop(id)
+      state.splice(state.indexOf(id), 1)
     }
     else {
       state.push(id)
@@ -118,6 +118,10 @@ class App extends React.Component {
     }
 
     this.setState({schools: state})
+  }
+
+  setSingleSchool(school) {
+    this.setState({schools: [school]})
   }
 
   componentDidMount() {
@@ -192,7 +196,9 @@ class Sidebar extends React.Component {
     for (let index in miscData.schools) {
       let school = miscData.schools[index]
 
-      checkboxes.push(<FlairedCheckbox text={miscData.mappings.abilityNames[school]} ticked={this.props.app.state.schools.includes(school)} onChange={() => {this.props.app.toggleSchool(school)}}/>)
+      checkboxes.push(<Tooltip content={"Right-click to show only this school."} placement={"right"}>
+        <FlairedCheckbox text={miscData.mappings.abilityNames[school]} ticked={this.props.app.state.schools.includes(school)} onChange={() => {this.props.app.toggleSchool(school)}} onContextMenu={() => {this.props.app.setSingleSchool(school)}}/>
+      </Tooltip>)
     }
 
     let options = {}
@@ -257,7 +263,7 @@ class SkillButton extends React.Component {
     let data = this.props.data
     return (
       <SkillTooltip data={data}>
-        <div className="skill-button">
+        <div className="skill-button unselectable">
           <Icon img={data.Icon}/>
         </div>
       </SkillTooltip>

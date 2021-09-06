@@ -23,7 +23,7 @@ export function SkillTooltip(props) {
 	</div>
 
 	return (
-		<Tooltip content={tooltip} placement="right">
+		<Tooltip content={tooltip} placement="right" classOverride={"skill-tooltip"}>
 			{props.children}
 		</Tooltip>
 	)

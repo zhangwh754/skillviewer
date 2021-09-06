@@ -9,7 +9,7 @@ import { cloneDeep } from "lodash"
 
 export function Text(props) {
 	// let extraClass = app.state.darkMode && !props.overrideColor ? "dark-mode-text" : ""
-    let extraClass = ""
+    let extraClass = "unselectable" // TODO OVERRIDE
 	return <p style={props.style} className={extraClass + " text " + props.className} onClick={props.onClick}>{props.text}</p>
 }
 
@@ -29,7 +29,7 @@ export function Icon(props) {
 	return (
 		<div style={style} className={className} onClick={props.onClick} onContextMenu={props.onContextMenu}>
 			{/* <img src={props.img} style={{width: props.size, height: props.size}}/> */}
-			<img alt={""} src={utils.getImage(props.img)} style={{width: "100%", height: "100%"}}/>
+			<img alt={""} src={utils.getImage(props.img)} style={{width: "100%", height: "100%"}} draggable={false}/>
 		</div>
 	)
 }
@@ -48,7 +48,7 @@ export class Tooltip extends React.Component {
 			render={attrs => (
 				<div>
 					{/* check if content prop is a valid element; if it's not, make it into a <Text> */}
-					<div className="styled-tooltip">
+					<div className={this.props.classOverride ? this.props.classOverride + " styled-tooltip" : "styled-tooltip"}>
 						{React.isValidElement(this.props.content) ? this.props.content : <Text text={this.props.content}/>}
 					</div>
 				</div>
@@ -64,10 +64,10 @@ export class Tooltip extends React.Component {
 
 export function FlairedCheckbox(props) {
 	return (
-		<div style={props.style} className="flaired-checkbox">
+		<div style={props.style} className="flaired-checkbox" onContextMenu={(e) => {props.onContextMenu(); e.preventDefault(); return false}}>
 			<input type="checkbox" checked={props.ticked} onChange={props.onChange} className="checkbox"/>
 			<div style={{width: "10px"}}/>
-			<Text text={props.text} style={{flexGrow:"1"}} className="text-small"/>
+			<Text text={props.text} style={{flexGrow:"1"}} className="text-small" onClick={() => {props.onChange(!props.ticked)}}/>
 		</div>
 	)
 }

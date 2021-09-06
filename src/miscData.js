@@ -1945,8 +1945,8 @@ export const schools = [
 	"Fire",
 	"Summoning",
 	"Air",
-	"Source",
 	"Polymorph",
+	"Source",
 	"Special",
 ]
 
