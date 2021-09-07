@@ -1947,7 +1947,7 @@ export const schools = [
 	"Air",
 	"Polymorph",
 	"Source",
-	"Special",
+	"None",
 ]
 
 // converts ids to image filenames / in-game names

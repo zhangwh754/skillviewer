@@ -85,7 +85,7 @@ class App extends React.Component {
       Air: {},
       Source: {},
       Polymorph: {},
-      Special: {},
+      None: {},
     }
 
     for (let modId in this.state.modOrder) {
@@ -93,12 +93,9 @@ class App extends React.Component {
 
       for (let skillId in mod.skills) {
         let skill = mod.skills[skillId]
-        let ability = "Special"
-        if ("Ability" in skill) {
-          ability = skill.Ability
-        }
+        let ability = skill.Ability
 
-        if (this.state.schools.includes(ability)) {
+        if (this.state.schools.includes(ability) && !skill.Hidden) {
           skills[ability][skillId] = skill
         }
       }
@@ -196,7 +193,7 @@ class Sidebar extends React.Component {
     for (let index in miscData.schools) {
       let school = miscData.schools[index]
 
-      checkboxes.push(<Tooltip content={"Right-click to show only this school."} placement={"right"}>
+      checkboxes.push(<Tooltip content={"Right-click to show only this school."} placement={"right"} key={index}>
         <FlairedCheckbox text={miscData.mappings.abilityNames[school]} ticked={this.props.app.state.schools.includes(school)} onChange={() => {this.props.app.toggleSchool(school)}} onContextMenu={() => {this.props.app.setSingleSchool(school)}}/>
       </Tooltip>)
     }
@@ -263,7 +260,7 @@ class SkillButton extends React.Component {
     let data = this.props.data
     return (
       <SkillTooltip data={data}>
-        <div className="skill-button unselectable">
+        <div className="skill-button unselectable" onClick={() => {console.log(data)}}>
           <Icon img={data.Icon}/>
         </div>
       </SkillTooltip>

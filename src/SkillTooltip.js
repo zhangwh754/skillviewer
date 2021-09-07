@@ -51,6 +51,8 @@ function SkillHeader(props) {
 			<div className="tooltip-header flex-horizontal-small">
 				<Text text={skill.DisplayNameRef} className="tooltip-header-title"/>
 
+				{/* <Text text={skill.id}/>	 */}
+
 				<div className="flex-horizontal-small flex-centered">
 					{apOrbs}
 				</div>
@@ -96,9 +98,9 @@ function SkillDescription(props) {
 
 	let elements = [baseDescription]
 	if (Object.keys(skill.SourceInfusions).length > 0) {
-		elements.push(<DarkHR/>)
+		elements.push(<DarkHR key={-10}/>)
 		elements.push(infusionText)
-		elements.push(<DarkHR/>)
+		elements.push(<DarkHR key={-20}/>)
 	}
 
 	return (
@@ -146,9 +148,10 @@ function SkillFooter(props) {
 }
 
 function Cooldown(props) {
+	let cooldown = props.skill.Cooldown == -1 ? "-" : props.skill.Cooldown
 	return (
 		<div className="cooldown">
-			<Text text={props.skill.Cooldown}/>
+			<Text text={cooldown}/>
 		</div>
 	)
 }
