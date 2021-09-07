@@ -34,9 +34,9 @@ class App extends React.Component {
     this.state = {
       initialized: false,
       currentSkill: null,
+      game: "EE_Core",
 
-      modOrder: [
-        "EE_Core",
+      addons: [
         "Epip",
         "Derpy_Tweaks",
       ],
@@ -46,18 +46,18 @@ class App extends React.Component {
   }
 
   isModActive(id) {
-    return this.state.modOrder.includes(id)
+    return this.state.game == id || this.state.addons.includes(id)
   }
 
   toggleMod(id) {
-    const state = this.state.modOrder
+    const state = this.state.addons
     if (state.includes(id)) {
       state.splice(state.indexOf(id), 1)
     }
     else {
       state.push(id)
     }
-    this.setState({modOrder: state})
+    this.setState({addons: state})
   }
 
   getAddons(modId) {
@@ -70,6 +70,18 @@ class App extends React.Component {
     }
 
     return addons
+  }
+
+  loadSkills(skills, mod) {
+    for (let skillId in mod.skills) {
+      let skill = mod.skills[skillId]
+      let ability = skill.Ability
+
+      if (this.state.schools.includes(ability) && !skill.Hidden) {
+        skills[ability][skillId] = skill
+      }
+    }
+    return skills
   }
 
   getSkills() {
@@ -88,16 +100,14 @@ class App extends React.Component {
       None: {},
     }
 
-    for (let modId in this.state.modOrder) {
-      let mod = data.mods[this.state.modOrder[modId]]
+    let mod = data.mods[this.state.game]
 
-      for (let skillId in mod.skills) {
-        let skill = mod.skills[skillId]
-        let ability = skill.Ability
+    skills = this.loadSkills(skills, mod)
 
-        if (this.state.schools.includes(ability) && !skill.Hidden) {
-          skills[ability][skillId] = skill
-        }
+    for (let modId in data.coreMods[this.state.game].addons) {
+      mod = data.mods[data.coreMods[this.state.game].addons[modId]]
+      if (this.isModActive(mod.metadata.id)) {
+        skills = this.loadSkills(skills, mod)
       }
     }
 
@@ -204,7 +214,7 @@ class Sidebar extends React.Component {
     }
 
     let addons = []
-    let addonData = app.getAddons(app.state.modOrder[0])
+    let addonData = app.getAddons(app.state.game)
     for (let index in addonData) {
       let addon = addonData[index]
 
@@ -215,7 +225,7 @@ class Sidebar extends React.Component {
       <div className="sidebar">
         <Text text="Mods"/>
 
-        <Dropdown options={options} selected={this.props.app.state.modOrder[0]}/>
+        <Dropdown options={options} selected={this.props.app.state.game}/>
 
         <div className="checkboxes-container">
           {addons}

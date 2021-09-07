@@ -129,13 +129,7 @@ function SkillFooter(props) {
 		</div>
 	}
 	
-	let schoolName;
-	if (skill.Ability === "None" || skill.Ability == null) {
-		schoolName = "Special"
-	}
-	else {
-		schoolName = miscData.mappings.abilityNames[skill.Ability]
-	}
+	let schoolName = miscData.mappings.abilityNames[skill.Ability]
 
 	return (
 		<div className="tooltip-bottom flex-horizontal flex-align-centered">

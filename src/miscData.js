@@ -1201,6 +1201,9 @@ export const colorHighlighting = {
 	"Summoning": "text-summon",
 	"Scoundrel": "text-rogue",
 	"Necromancer": "text-necro",
+	"None": "text-none",
+	"Special": "text-none",
+	"Sourcery": "text-source",
 }
 
 export const statusNames = {

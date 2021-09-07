@@ -281,6 +281,8 @@ body {
 .text-summon {color: rgb(175, 140, 255)}
 .text-rogue {color: rgb(165, 137, 137)}
 .text-necro {color: rgb(165, 126, 158)}
+.text-source {color: rgb(64, 170, 156)}
+.text-none {color: rgb(228, 221, 120)}
 
 .text-dmg-armor-magic {color: rgb(76, 200, 216)}
 .text-dmg-armor-phys {color: rgb(184, 184, 184)}
