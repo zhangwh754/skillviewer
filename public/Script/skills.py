@@ -15,8 +15,6 @@ usingSearch = re.compile('using "(.*)"')
 cleanseRegex = re.compile("(Cleanses .*\.)")
 descRegex = re.compile('<font size=(\'|\")19(\'|\")>(?P<FullText>.*)</font>') # 2 vanilla skills use " instead of '
 
-statusDocs = ["Potion_vanilla.txt", "Status_CONSUME_vanilla.txt", "Status_HEALING_vanilla.txt", "Status_GUARDIAN_ANGEL_vanilla.txt", "Status_ACTIVE_DEFENSE_vanilla.txt", "Potion.txt", "Status_HEAL.txt", "Status_ACTIVE_DEFENSE.txt", "Status_HEALING.txt", "Status_CONSUME.txt"]
-
 potionTypes = [
     "Potion.txt",
     "Status_ACTIVE_DEFENSE.txt",
@@ -79,6 +77,7 @@ relevantParams = {
     "DamageType": "None",
     "Memory Cost": "0",
     "Magic Cost": 0,
+    "SkillProperties": [],
 
     # manually-added properties
     "TieredStatuses": {},
@@ -614,7 +613,7 @@ def Parse(folders, descriptionOverrides):
                         if descRegex.search(value) != None:
                             value = prettifySkillDescription(value)
                     
-                    # status effect application
+                    # status effect applications, surfaces actions, etc.
                     if param == "SkillProperties":
                         statuses = []
                         print(line)
@@ -622,11 +621,49 @@ def Parse(folders, descriptionOverrides):
                             if tieredStatuses[key].search(line):
                                 statuses.append(key)
                         
-                        if folder == "Amer":
-                            print(statuses)
+                        # clean up the SkillProperties line
+                        line = line.replace('data "SkillProperties" ', "")
+                        line = line.replace("\n", "")
+                        line = line.strip("\"")
+                        props = line.split(";")
+
+                        parsedProps = {}
+                        for prop in props:
+                            if prop == "":
+                                continue
+                            params = prop.split(",")
+                            currentProp = params[0]
+                            prefixes = []
+
+                            # prefixes like "SELF:"
+                            propPrefixes = currentProp.split(":")
+                            currentProp = propPrefixes[len(propPrefixes)-1]
+
+                            if len(propPrefixes) > 1:
+                                prefixes = propPrefixes[:1]
+
+                                for i in range(len(prefixes)):
+                                    pref = prefixes[i]
+                                    if "IF(" in pref:
+                                        prefixes[i] = {"condition": pref[3:len(pref)-1]}
+
+
+                            name = currentProp
+                            if currentProp in potions and "DisplayNameRef" in potions[currentProp]: # todo
+                                name = potions[currentProp]["DisplayNameRef"]
+                                pass
+
+                            propParams = []
+                            for i in range(1, len(params)):
+                                propParams.append(params[i])
+
+                            parsedProps[currentProp] = {"params": propParams, "name": name, "prefixes": prefixes}
+
+                        currentSkill["SkillProperties"] = parsedProps
                         currentSkill["TieredStatuses"] = statuses
 
-                    currentSkill[param] = value
+                    if param != "SkillProperties": # todo
+                        currentSkill[param] = value
 
                 lineCount += 1
 

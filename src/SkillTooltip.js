@@ -103,6 +103,20 @@ function SkillDescription(props) {
 			statuses.push(text)
 		}
 	}
+
+	for (let action in skill.SkillProperties) {
+		let data = skill.SkillProperties[action]
+
+		// for tier 3 statuses, use the custom "Apply up to X" string. TODO move
+		if (action in miscData.statusNames) {
+			continue
+		}
+
+		let text = parse(utils.format("<p class='compact-text' key='" + action + "'><span class='{0}'>{1}</span></p>", "", CreateSkillPropertyLine(action, data)))
+
+		statuses.push(text)
+	}
+
 	let statusesDisplay = null
 	if (statuses.length > 0) {
 		statusesDisplay = <div className="flex-vertical">
@@ -197,4 +211,73 @@ function Requirements(props) {
 			{parsedReqs}
 		</div>
 	);
+}
+
+// TODO fix IF surface conditions
+// create a string out of a SkillProperties entry
+function CreateSkillPropertyLine(id, data) {
+	let types = {
+		"Curse": "Curses surfaces.",
+		"Bless": "Blesses surfaces.",
+		"Bloodify": "Turns surfaces bloody.",
+		"Freeze": "Freezes surfaces.",
+		"Douse": "Douses surfaces.",
+		"Condense": "Condenses surfaces.",
+		"Contaminate": "Contaminates surfaces.",
+		"Electrify": "Electrifies surfaces.",
+		"Ignite": "Ignites surfaces.",
+		"Vaporize": "Vaporizes surfaces.",
+		"Melt": "Melts surfaces.",
+		"Oilify": "Contaminates surfaces to oil.",
+		"Shatter": "Shatters surfaces.",
+
+		"Force": "Pushes the target {0}cm away from caster.",
+		"AlwaysBackstab": "Always backstabs.",
+		"Summon": "Summons a summon.",
+		"SwapPlaces": "Swaps places of caster and target.",
+		"Pickup": "Picks items up.",
+		"Equalize": "Equalizes health.",
+		"EXPLODE": "Explodes the target.",
+		"CanBackstab": "Can backstab.",
+
+		"Sabotage": "Explodes {0} random grenade(s)/arrow(s) of the target.",
+		"CreateSurface": "{3}% chance to create a {0}m {2} surface for {1} turn(s)",
+		"TargetCreateSurface": "{3}% chance to create a {0}m {2} surface for {1} turn(s)",
+		"CreateConeSurface": "Creates a {0}m {2} surface for {1} turn(s).",
+		"DAMAGE_ON_MOVE": "{0}% chance to receive damage every {3}cm moved.", // TODO
+	}
+
+	let str = "Applies " +  data.name
+
+	// TODO
+	if (str.includes("Arrows")) {
+		return ""
+	}
+
+	if (types[id]) {
+		return utils.format(types[id], ...data.params)
+	}
+
+	// status length
+	if (data.params.length > 0 && data.params[1] != "0") {
+		str += utils.format(" for {0} turn{1}", data.params[1], data.params[1] != "1" ? "s" : "")
+	}
+
+	for (let i in data.prefixes) {
+		let prefix = data.prefixes[i]
+
+		if (prefix == "SELF") {
+			str += " on self"
+		}
+		else if (prefix == "TARGET") {
+			str += " on target"
+		}
+		else if (prefix.includes("SURFACEBOOST(")) {
+			str += ", receives bonuses from consumed surfaces"
+		}
+	}
+
+	str += "."
+
+	return str
 }

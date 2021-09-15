@@ -8,6 +8,21 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -33,6 +48,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "80",
+    "SkillProperties": {
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -70,6 +95,21 @@
     "Damage Multiplier": "110",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      },
+      "STEAM_LANCE": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Steam Lance",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -103,6 +143,26 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Corrosive",
+    "SkillProperties": {
+      "BATTERED_MANIP_1": {
+        "params": [
+          "100",
+          "0ACID",
+          "100",
+          "2"
+        ],
+        "name": "1 Battered stack",
+        "prefixes": []
+      },
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -139,6 +199,24 @@
     "Damage Multiplier": "150",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "AMER_SLOWED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed II",
+        "prefixes": []
+      },
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -172,6 +250,24 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_SQUELCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Squelched III",
+        "prefixes": []
+      },
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SQUELCHED_APPLY"
     ],
@@ -205,6 +301,13 @@
     "IsEnemySkill": "Yes",
     "ActionPoints": 4,
     "Cooldown": 6,
+    "SkillProperties": {
+      "PROTECTION_CIRCLE_INITIAL": {
+        "params": [],
+        "name": "|Circle of Protection|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Icon": "Skill_Summoning_CircleOfProtection",
     "DisplayNameRef": "Dome of Protection",
@@ -245,6 +348,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -265,6 +369,18 @@
     "Ability": "Ranger",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "HASTED": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Hasted",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "Icon": "Skill_Ranger_TacticalRetreat",
     "DisplayNameRef": "Tactical Retreat",
@@ -298,6 +414,19 @@
     "Ability": "Warrior",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "Fire",
+          "100",
+          "1"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Icon": "Skill_Warrior_PhoenixDive",
     "DisplayNameRef": "Phoenix Dive",
@@ -332,6 +461,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "90",
+    "SkillProperties": {
+      "AMER_WEAKENED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Weakened II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WarriorLore 3",
     "UseWeaponDamage": true,
@@ -365,6 +504,13 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "85",
+    "SkillProperties": {
+      "AlwaysBackstab": {
+        "params": [],
+        "name": "AlwaysBackstab",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RogueLore 1",
     "UseWeaponDamage": true,
@@ -412,6 +558,7 @@
     "Damage Range": "10",
     "DamageType": "None",
     "Memory Cost": "0",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {},
@@ -427,6 +574,29 @@
     "Damage Multiplier": "150",
     "Damage Range": "15",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_EPIDEMICOFFIRE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Epidemic of Fire",
+        "prefixes": []
+      },
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": false,
@@ -457,6 +627,16 @@
     "Ability": "Water",
     "ActionPoints": 3,
     "Cooldown": 3,
+    "SkillProperties": {
+      "CHAIN_HEAL": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Chain Heal",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": false,
@@ -493,6 +673,39 @@
     "Damage Multiplier": "50",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "Freeze": {
+        "params": [],
+        "name": "Freeze",
+        "prefixes": []
+      },
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      },
+      "AMER_SLOWED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed III",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "WaterFrozen",
+          "25"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SLOWED_APPLY"
     ],
@@ -528,6 +741,25 @@
     "Damage Multiplier": "77",
     "Damage Range": "10",
     "DamageType": "Chaos",
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "DamageType"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "AMER_BLIND_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_BLIND_APPLY"
     ],
@@ -563,6 +795,26 @@
     "Damage Multiplier": "90",
     "Damage Range": "10",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "POISONED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "PoisonCloud",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -596,6 +848,21 @@
     "Damage Multiplier": "130",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "Electrify": {
+        "params": [],
+        "name": "Electrify",
+        "prefixes": []
+      },
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": false,
@@ -629,6 +896,25 @@
     "Damage Multiplier": "75",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_BLIND_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled III",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "None"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_BLIND_APPLY"
     ],
@@ -665,6 +951,25 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_BLIND_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled III",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "None"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_BLIND_APPLY"
     ],
@@ -697,6 +1002,16 @@
     "Damage Multiplier": "70",
     "Damage Range": "0",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_SLOWED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SLOWED_APPLY"
     ],
@@ -745,6 +1060,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -779,6 +1095,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -798,6 +1115,13 @@
     "ActionPoints": 0,
     "Cooldown": 3,
     "Damage Multiplier": "100",
+    "SkillProperties": {
+      "AlwaysHighGround": {
+        "params": [],
+        "name": "AlwaysHighGround",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": true,
@@ -846,6 +1170,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -867,6 +1192,31 @@
     "Damage Multiplier": "115",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "3",
     "UseWeaponDamage": false,
@@ -900,6 +1250,21 @@
     "Damage Multiplier": "30",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "1",
     "UseWeaponDamage": false,
@@ -933,6 +1298,26 @@
     "Damage Multiplier": "85",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "Oil",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -966,6 +1351,21 @@
     "Damage Multiplier": "90",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "Electrify": {
+        "params": [],
+        "name": "Electrify",
+        "prefixes": []
+      },
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": false,
@@ -999,6 +1399,16 @@
     "Damage Multiplier": "85",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -1044,6 +1454,7 @@
     "Hidden": false,
     "Stealth": "No",
     "Damage Range": "10",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -1077,6 +1488,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -1111,6 +1523,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -1144,6 +1557,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -1162,6 +1576,13 @@
     "ActionPoints": 4,
     "Cooldown": 1,
     "Damage Multiplier": "85",
+    "SkillProperties": {
+      "CanBackstab": {
+        "params": [],
+        "name": "CanBackstab",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": true,
@@ -1195,6 +1616,13 @@
     "ActionPoints": 6,
     "Cooldown": 2,
     "Damage Multiplier": "85",
+    "SkillProperties": {
+      "CanBackstab": {
+        "params": [],
+        "name": "CanBackstab",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": true,
@@ -1230,6 +1658,24 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Magic",
+    "SkillProperties": {
+      "AMER_BLIND_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled III",
+        "prefixes": []
+      },
+      "AMER_CHLOROFORM": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Chloroform",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_BLIND_APPLY"
     ],
@@ -1262,6 +1708,16 @@
     "Ability": "Ranger",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "MARKED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Marked",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "0",
     "UseWeaponDamage": false,
@@ -1310,6 +1766,7 @@
     "Magic Cost": "0",
     "Hidden": false,
     "Stealth": "No",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -1342,6 +1799,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -1365,6 +1823,26 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "POISONED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "Poison",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "1",
     "UseWeaponDamage": false,
@@ -1396,6 +1874,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "110",
+    "SkillProperties": {
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -1446,6 +1934,7 @@
     "MemorizationRequirements": "",
     "Stealth": "No",
     "Memory Cost": "0",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "ParsedMemorizationRequirements": {},
     "BaseDescription": "Releases shards on impact, dealing 100% <span class='text-dmg-pierce'>Piercing Damage</span> in target 4m radius.",
@@ -1461,6 +1950,16 @@
     "Damage Multiplier": "70",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "BLEEDING": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1485,6 +1984,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "AMER_BLIND_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1515,6 +2024,26 @@
     "Damage Multiplier": "70",
     "Damage Range": "20",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1542,6 +2071,26 @@
     "Damage Multiplier": "120",
     "Damage Range": "30",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "FireCursed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1566,6 +2115,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 2,
+    "SkillProperties": {
+      "AMER_ENTHRALLED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1593,6 +2152,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 2,
+    "SkillProperties": {
+      "AMER_ENTHRALLED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ENTHRALLED_APPLY"
     ],
@@ -1625,6 +2194,16 @@
     "Damage Multiplier": "70",
     "Damage Range": "20",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "AMER_DECAYING_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1649,6 +2228,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 2,
+    "SkillProperties": {
+      "AMER_TERRIFIED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1679,6 +2268,31 @@
     "Damage Multiplier": "70",
     "Damage Range": "20",
     "DamageType": "Water",
+    "SkillProperties": {
+      "Freeze": {
+        "params": [],
+        "name": "Freeze",
+        "prefixes": []
+      },
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "WaterFrozen",
+          "25"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1703,6 +2317,26 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "HEALING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Healing",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "WaterFrozenBlessed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1730,6 +2364,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "HolyGrenadeHeal": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Holy Grenade",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1760,6 +2404,16 @@
     "Damage Multiplier": "70",
     "Damage Range": "20",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_SLOWED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1787,6 +2441,21 @@
     "Damage Multiplier": "70",
     "Damage Range": "20",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      },
+      "Electrify": {
+        "params": [],
+        "name": "Electrify",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1811,6 +2480,31 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "Water",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      },
+      "WET": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Wet",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "3",
     "UseWeaponDamage": false,
@@ -1838,6 +2532,31 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "WaterBlessed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      },
+      "WET": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Wet",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "3",
     "UseWeaponDamage": false,
@@ -1865,6 +2584,16 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "AMER_BLIND_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -1892,6 +2621,26 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "PoisonCloud",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "POISONED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1919,6 +2668,18 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "Oil",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1946,6 +2707,18 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "OilBlessed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -1973,6 +2746,26 @@
     "Ability": "None",
     "ActionPoints": 3,
     "Cooldown": 0,
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "Poison",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "POISONED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -2003,6 +2796,26 @@
     "Damage Multiplier": "100",
     "Damage Range": "30",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "2",
+          "2",
+          "PoisonCursed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "POISONED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "2",
     "UseWeaponDamage": false,
@@ -2029,6 +2842,44 @@
     "Damage Multiplier": "45",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      },
+      "Freeze": {
+        "params": [],
+        "name": "Freeze",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "WaterFrozen",
+          "25"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      },
+      "AMER_SLOWED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SLOWED_APPLY"
     ],
@@ -2076,6 +2927,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {
@@ -2097,6 +2949,31 @@
     "Damage Multiplier": "30",
     "Damage Range": "5",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_METEORSHOWER_HIT": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Meteor Shower",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "4",
     "UseWeaponDamage": false,
@@ -2130,6 +3007,41 @@
     "Damage Multiplier": "50",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "TargetCreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "1",
     "UseWeaponDamage": false,
@@ -2157,6 +3069,41 @@
     "Damage Multiplier": "60",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "CreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "FireCursed",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      },
+      "TargetCreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "FireCursed",
+          "100"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "1",
     "UseWeaponDamage": false,
@@ -2184,6 +3131,21 @@
     "Damage Multiplier": "120",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      },
+      "Electrify": {
+        "params": [],
+        "name": "Electrify",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "ExplodeRadius": "3",
     "UseWeaponDamage": false,
@@ -2217,6 +3179,24 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_CALCIFYING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      },
+      "AMER_TERRIFIED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_TERRIFIED_APPLY"
     ],
@@ -2249,6 +3229,21 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "WET": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Wet",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2282,6 +3277,21 @@
     "Ability": "Death",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "BLEEDING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2317,6 +3327,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "90",
+    "SkillProperties": {
+      "AMER_WEAKENED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Weakened III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_WEAKENED_APPLY"
     ],
@@ -2351,6 +3371,16 @@
     "Ability": "Source",
     "ActionPoints": 2,
     "Cooldown": 0,
+    "SkillProperties": {
+      "SPIRIT_VISION": {
+        "params": [
+          " 100",
+          " 10"
+        ],
+        "name": "SPIRIT_VISION",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2381,6 +3411,26 @@
     "Damage Multiplier": "30",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      },
+      "Freeze": {
+        "params": [],
+        "name": "Freeze",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2411,6 +3461,17 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "Shatter": {
+        "params": [
+          "100",
+          "",
+          "100"
+        ],
+        "name": "Shatter",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2447,6 +3508,21 @@
     "Damage Multiplier": "60",
     "Damage Range": "10",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "POISONED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Poisoned",
+        "prefixes": []
+      },
+      "Contaminate": {
+        "params": [],
+        "name": "Contaminate",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2477,6 +3553,16 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 6,
+    "SkillProperties": {
+      "FAVOURABLE_WIND_AURA": {
+        "params": [
+          "100",
+          "4"
+        ],
+        "name": "Favourable Wind Aura",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2513,6 +3599,29 @@
     "Damage Multiplier": "180",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "TargetCreateSurface": {
+        "params": [
+          "4",
+          "",
+          "WaterCloudElectrified",
+          "100",
+          "1"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "AMER_TERRIFIED_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2546,6 +3655,26 @@
     "Damage Multiplier": "90",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_BLINDINGRADIANCE": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Blinding Radiance",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "AMER_BLIND_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2576,6 +3705,28 @@
     "Ability": "None",
     "ActionPoints": 0,
     "Cooldown": 5,
+    "SkillProperties": {
+      "FLESH_SACRIFICE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Flesh Sacrifice",
+        "prefixes": []
+      },
+      "TargetCreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "Blood",
+          "100"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2617,6 +3768,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -2636,6 +3788,19 @@
     "Ability": "Rogue",
     "ActionPoints": 0,
     "Cooldown": 4,
+    "SkillProperties": {
+      "ADRENALINE": {
+        "params": [
+          "100",
+          "-1",
+          "",
+          "4",
+          "6"
+        ],
+        "name": "ADRENALINE",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2669,6 +3834,16 @@
     "Ability": "Rogue",
     "ActionPoints": 0,
     "Cooldown": 6,
+    "SkillProperties": {
+      "PLAY_DEAD": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Feign Death",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2701,6 +3876,26 @@
     "Damage Multiplier": "40",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2731,6 +3926,16 @@
     "Ability": "Warrior",
     "ActionPoints": 4,
     "Cooldown": 4,
+    "SkillProperties": {
+      "TAUNTED": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Taunted",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2764,6 +3969,24 @@
     "Ability": "Polymorph",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_FREESNEAK_WITHINVIS": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Sneaking, and become Invisible until the end of your turn. If used while out of combat, become Invisible",
+        "prefixes": []
+      },
+      "AMER_CHAMELEONSKIN": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Chameleon Cloak",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2797,6 +4020,16 @@
     "Ability": "None",
     "ActionPoints": 2,
     "Cooldown": 6,
+    "SkillProperties": {
+      "ENCOURAGED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Encouraged",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2823,6 +4056,40 @@
     "SkillType": "Shout",
     "ActionPoints": 4,
     "Cooldown": 3,
+    "SkillProperties": {
+      "SHIELDED_PHYSICAL": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "SHIELDED_MAGIC": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Battered stacks",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Harried stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2851,6 +4118,18 @@
     "Ability": "Warrior",
     "ActionPoints": 4,
     "Cooldown": 5,
+    "SkillProperties": {
+      "DEFLECTING": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "|Deflecting|",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2883,6 +4162,16 @@
     "Ability": "Warrior",
     "ActionPoints": 4,
     "Cooldown": 6,
+    "SkillProperties": {
+      "GUARDIAN_ANGEL_AURA": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Guardian Angel Aura|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2916,6 +4205,18 @@
     "Ability": "Warrior",
     "ActionPoints": 0,
     "Cooldown": 4,
+    "SkillProperties": {
+      "THICK_OF_THE_FIGHT": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Bloodlust",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2949,6 +4250,16 @@
     "Ability": "Summoning",
     "ActionPoints": 2,
     "Cooldown": 6,
+    "SkillProperties": {
+      "INNER_DEMON": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Inner Demon",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -2984,6 +4295,31 @@
     "Damage Multiplier": "175",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "4",
+          "2",
+          "Fire",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3014,6 +4350,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "FLAMING_TONGUES": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "|Flaming Tongues|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3048,6 +4394,16 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "HEALING_TEARS": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Empyrean Tears",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3082,6 +4438,24 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "FROST_AURA": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Soothing Cold",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-1 Harried stack",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3115,6 +4489,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "FIRE_BRAND_AURA": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Fire Brand",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3152,6 +4536,24 @@
     "Damage Multiplier": "80",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "SUFFOCATING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Suffocating",
+        "prefixes": []
+      },
+      "AMER_SQUELCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Squelched III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SQUELCHED_APPLY"
     ],
@@ -3185,6 +4587,24 @@
     "Ability": "Earth",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "MEND_METAL": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Mending Metal",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-1 Battered stack",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3221,6 +4641,31 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Poison",
+    "SkillProperties": {
+      "AMER_POISONWAVE": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Miasma",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "TargetCreateSurface": {
+        "params": [
+          "4",
+          "2",
+          "PoisonCloud",
+          "100",
+          "1"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3251,6 +4696,18 @@
     "Ability": "Death",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "BONE_CAGE": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "|Bone Cage|",
+        "prefixes": [
+          "TARGET"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3299,6 +4756,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -3319,6 +4777,18 @@
     "Ability": "Earth",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "SIPHON_POISON": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Siphon Poison|",
+        "prefixes": [
+          "SURFACEBOOST(Poison|PoisonCloud|PoisonBlessed|PoisonCloudBlessed|PoisonCursed|PoisonCloudCursed)"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3353,6 +4823,16 @@
     "Ability": "Summoning",
     "ActionPoints": 4,
     "Cooldown": 8,
+    "SkillProperties": {
+      "ETERNITY_DOOR": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Persisting|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3385,6 +4865,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 0,
     "Cooldown": 6,
+    "SkillProperties": {
+      "HORNS": {
+        "params": [
+          "100",
+          "4"
+        ],
+        "name": "|Bull Horns|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3418,6 +4908,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 2,
     "Cooldown": 6,
+    "SkillProperties": {
+      "WINGS": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Wings",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3451,6 +4951,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 4,
     "Cooldown": 5,
+    "SkillProperties": {
+      "STEEL_SKIN": {
+        "params": [
+          "100",
+          "4"
+        ],
+        "name": "Steel Skin",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3497,6 +5007,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -3516,6 +5027,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 3,
     "Cooldown": 5,
+    "SkillProperties": {
+      "MEDUSA_HEAD": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Medusa Head",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3549,6 +5070,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "SPIDER_LEGS": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Spider Legs",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3595,6 +5126,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -3628,6 +5160,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -3642,6 +5175,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "SPARKING_SWINGS": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "|Sparkstriker|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3676,6 +5219,18 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "VAMPIRISM_AURA": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "| Vampiric Hunger Aura |",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3706,6 +5261,16 @@
     "Ability": "Earth",
     "ActionPoints": 1,
     "Cooldown": 3,
+    "SkillProperties": {
+      "OIL_CARAPACE": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "|Oil Carapace|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3739,6 +5304,16 @@
     "Ability": "Earth",
     "ActionPoints": 4,
     "Cooldown": 5,
+    "SkillProperties": {
+      "OIL_CARAPACE": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "|Oil Carapace|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3769,6 +5344,16 @@
     "Ability": "Earth",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "VENOM_COATING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Venom Coating|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3803,6 +5388,16 @@
     "Ability": "Earth",
     "ActionPoints": 4,
     "Cooldown": 5,
+    "SkillProperties": {
+      "VENOM_AURA": {
+        "params": [
+          "100",
+          "4"
+        ],
+        "name": "|Venom Aura|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -3847,6 +5442,7 @@
     "Magic Cost": "0",
     "Hidden": false,
     "Stealth": "No",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -3880,6 +5476,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -3909,6 +5506,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -3925,6 +5523,13 @@
     "Ability": "Death",
     "ActionPoints": 6,
     "Cooldown": 5,
+    "SkillProperties": {
+      "Bloodify": {
+        "params": [],
+        "name": "Bloodify",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 3; Necromancy 3",
     "Icon": "Skill_Skillcrafting_Water_BloodStorm",
@@ -3969,6 +5574,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "StatsDescriptionParams": "",
     "ExplodeRadius": 0,
@@ -4002,6 +5608,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4036,6 +5643,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4063,6 +5671,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4090,6 +5699,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4122,6 +5732,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4156,6 +5767,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4189,6 +5801,7 @@
     "Damage Range": "10",
     "DamageType": "None",
     "Memory Cost": "0",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4216,6 +5829,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -4232,6 +5846,19 @@
     "Ability": "Source",
     "ActionPoints": 3,
     "Cooldown": 2,
+    "SkillProperties": {
+      "DRAIN": {
+        "params": [
+          "100",
+          "0",
+          "",
+          "0",
+          "0"
+        ],
+        "name": "DRAIN",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -4273,6 +5900,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -4300,6 +5928,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -4314,6 +5943,16 @@
     "Cooldown": 1,
     "Damage Multiplier": "90",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_ATAXIA_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Ataxia II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -4340,6 +5979,21 @@
     "Ability": "Source",
     "ActionPoints": 5,
     "Cooldown": 3,
+    "SkillProperties": {
+      "BLESSED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Blessed",
+        "prefixes": []
+      },
+      "Bless": {
+        "params": [],
+        "name": "Bless",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -4369,6 +6023,21 @@
     "Ability": "Source",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "CURSED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Cursed",
+        "prefixes": []
+      },
+      "Curse": {
+        "params": [],
+        "name": "Curse",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -4399,6 +6068,16 @@
     "Damage Multiplier": "125",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_ATAXIA_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Ataxia III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ATAXIA_APPLY"
     ],
@@ -4434,6 +6113,34 @@
     "Damage Multiplier": "120",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "AMER_ENTHRALLED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated III",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ENTHRALLED_APPLY"
     ],
@@ -4466,6 +6173,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "CLEAR_MINDED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Clear-Minded",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "FireSpecialist 1",
     "Memory Cost": "1",
@@ -4499,6 +6216,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "HASTED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Hasted",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "FireSpecialist 1",
     "Memory Cost": "1",
@@ -4531,6 +6258,16 @@
     "SkillType": "Target",
     "ActionPoints": 4,
     "Cooldown": -1,
+    "SkillProperties": {
+      "EXTRA_TURN": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "|Time-Warped|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "2",
@@ -4559,6 +6296,28 @@
     "Ability": "Summoning",
     "ActionPoints": 4,
     "Cooldown": 3,
+    "SkillProperties": {
+      "HARMONY": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "|Harmony|",
+        "prefixes": [
+          "TARGET"
+        ]
+      },
+      "HARMONY_MA": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "|Harmony Magic Armour|",
+        "prefixes": [
+          "TARGET"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Summoning 1; WaterSpecialist 1",
     "Memory Cost": "1",
@@ -4593,6 +6352,16 @@
     "Ability": "Summoning",
     "ActionPoints": 0,
     "Cooldown": 5,
+    "SkillProperties": {
+      "HEAL_SHARING": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Commune",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Summoning 1; WaterSpecialist 1",
     "Memory Cost": "1",
@@ -4626,6 +6395,16 @@
     "SkillType": "Target",
     "ActionPoints": 4,
     "Cooldown": 5,
+    "SkillProperties": {
+      "MADNESS": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "|Mad|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "1",
@@ -4654,6 +6433,16 @@
     "Ability": "Warrior",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "TAUNTED": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Taunted",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WarriorLore 3",
     "Memory Cost": "1",
@@ -4687,6 +6476,31 @@
     "Ability": "Rogue",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "Sabotage": {
+        "params": [
+          "1"
+        ],
+        "name": "Sabotage",
+        "prefixes": []
+      },
+      "AMER_SABOTAGE": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Sabotage",
+        "prefixes": []
+      },
+      "AMER_BLIND_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "FireSpecialist 1; RogueLore 1",
     "Memory Cost": "1",
@@ -4721,6 +6535,16 @@
     "Ability": "Ranger",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "FARSIGHT": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Farsight",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RangerLore 1; Polymorph 1",
     "Memory Cost": "1",
@@ -4755,6 +6579,16 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "EVADING": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Evading",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 1; RogueLore 1",
     "Memory Cost": "1",
@@ -4789,6 +6623,16 @@
     "Ability": "Polymorph",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_FLAYSKIN": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Ruin",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Polymorph 3",
     "Memory Cost": "2",
@@ -4822,6 +6666,32 @@
     "Ability": "Water",
     "ActionPoints": 3,
     "Cooldown": 3,
+    "SkillProperties": {
+      "CLEANSE_WOUNDS": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "|Cleanse Wounds|",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-2 Harried stacks",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-2 Battered stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 1",
     "Memory Cost": "1",
@@ -4855,6 +6725,16 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "VAMPIRISM": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "| Vampiric Hunger |",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 1; Necromancy 1",
     "Memory Cost": "1",
@@ -4892,6 +6772,32 @@
     "Damage Multiplier": "80",
     "Damage Range": "10",
     "DamageType": "Magic",
+    "SkillProperties": {
+      "HARRIED_MANIP_2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "2 Harried stacks",
+        "prefixes": []
+      },
+      "SUFFOCATING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Suffocating",
+        "prefixes": []
+      },
+      "AMER_SQUELCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Squelched III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SQUELCHED_APPLY"
     ],
@@ -4928,6 +6834,24 @@
     "Damage Multiplier": "110",
     "Damage Range": "10",
     "DamageType": "Corrosive",
+    "SkillProperties": {
+      "BATTERED_MANIP_2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "2 Battered stacks",
+        "prefixes": []
+      },
+      "ACID": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Acid",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "EarthSpecialist 1; Necromancy 1",
     "Memory Cost": "1",
@@ -4962,6 +6886,43 @@
     "Damage Multiplier": "50",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "FIREBLOOD": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Pyrexia",
+        "prefixes": []
+      },
+      "TargetCreateSurface": {
+        "params": [
+          "1",
+          "2",
+          "Fire"
+        ],
+        "name": "TargetCreateSurface",
+        "prefixes": []
+      },
+      "AMER_TERRIFIED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified III",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_TERRIFIED_APPLY"
     ],
@@ -4998,6 +6959,34 @@
     "Damage Multiplier": "75",
     "Damage Range": "20",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      },
+      "AMER_COMBUSTION": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Combustion",
+        "prefixes": []
+      },
+      "AMER_TERRIFIED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_TERRIFIED_APPLY"
     ],
@@ -5033,6 +7022,36 @@
     "Damage Multiplier": "110",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "AMER_BRITTLE_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Brittle",
+        "prefixes": []
+      },
+      "Freeze": {
+        "params": [],
+        "name": "Freeze",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "WaterFrozen",
+          "100"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 3",
     "Memory Cost": "1",
@@ -5066,6 +7085,18 @@
     "Damage Multiplier": "70",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "Condense": {
+        "params": [],
+        "name": "Condense",
+        "prefixes": []
+      },
+      "Douse": {
+        "params": [],
+        "name": "Douse",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 1",
     "Memory Cost": "1",
@@ -5098,6 +7129,16 @@
     "Damage Multiplier": "165",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_BLIND_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_BLIND_APPLY"
     ],
@@ -5125,6 +7166,16 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "REGENERATION": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Regenerating",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 1",
     "Memory Cost": "1",
@@ -5158,6 +7209,24 @@
     "Ability": "Water",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "MAGIC_SHELL": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Magic Shell",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Harried stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 1",
     "Memory Cost": "1",
@@ -5191,6 +7260,16 @@
     "Ability": "Death",
     "ActionPoints": 5,
     "Cooldown": 5,
+    "SkillProperties": {
+      "LIVINGONTHEEDGE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Necrotheosis",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 3",
     "Memory Cost": "2",
@@ -5226,6 +7305,18 @@
     "Cooldown": 5,
     "Damage Multiplier": "100",
     "Damage Range": "10",
+    "SkillProperties": {
+      "DAMAGE_ON_MOVE": {
+        "params": [
+          "100",
+          "2",
+          "",
+          "75"
+        ],
+        "name": "|Broken Knee|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RogueLore 3",
     "Memory Cost": "2",
@@ -5270,6 +7361,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -5291,6 +7383,16 @@
     "Cooldown": 3,
     "Damage Multiplier": "125",
     "Damage Range": "10",
+    "SkillProperties": {
+      "AMER_WEAKENED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Weakened III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_WEAKENED_APPLY"
     ],
@@ -5324,6 +7426,16 @@
     "Ability": "Water",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "PERMAFROST": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Permafrost",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 3",
     "Memory Cost": "1",
@@ -5357,6 +7469,24 @@
     "Ability": "Earth",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "FORTIFIED": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Fortified",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Battered stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "EarthSpecialist 1",
     "Memory Cost": "1",
@@ -5393,6 +7523,25 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      },
+      "CreateSurface": {
+        "params": [
+          "3",
+          "2",
+          "Oil"
+        ],
+        "name": "CreateSurface",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "EarthSpecialist 3",
     "Memory Cost": "1",
@@ -5426,6 +7575,24 @@
     "Damage Multiplier": "75",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      },
+      "AMER_SLOWED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SLOWED_APPLY"
     ],
@@ -5455,6 +7622,29 @@
     "Damage Multiplier": "110",
     "Damage Range": "10",
     "DamageType": "Air",
+    "SkillProperties": {
+      "AMER_CHARGED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Charged",
+        "prefixes": []
+      },
+      "AMER_ENTHRALLED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated III",
+        "prefixes": []
+      },
+      "Electrify": {
+        "params": [],
+        "name": "Electrify",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ENTHRALLED_APPLY"
     ],
@@ -5491,6 +7681,16 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -5525,6 +7725,18 @@
     "Damage Multiplier": "200",
     "Damage Range": "0",
     "DamageType": "Magic",
+    "SkillProperties": {
+      "DemonicStareHeal": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Demonic Stare|",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "1",
@@ -5550,6 +7762,16 @@
     "Ability": "Death",
     "ActionPoints": 3,
     "Cooldown": 5,
+    "SkillProperties": {
+      "DEATH_WISH": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Death Instinct",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 3",
     "Memory Cost": "1",
@@ -5586,6 +7808,16 @@
     "Damage Multiplier": "125",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_WEAKENED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Weakened III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_WEAKENED_APPLY"
     ],
@@ -5618,6 +7850,16 @@
     "Ability": "Death",
     "ActionPoints": 3,
     "Cooldown": 5,
+    "SkillProperties": {
+      "SHACKLES_OF_PAIN": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "SHACKLES_OF_PAIN",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 3",
     "Memory Cost": "2",
@@ -5654,6 +7896,26 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "VAMPIRIC_TOUCH": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vampiric Touch",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "BLEEDING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 1",
     "Memory Cost": "1",
@@ -5685,6 +7947,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "115",
+    "SkillProperties": {
+      "AMER_ATAXIA_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Ataxia III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ATAXIA_APPLY"
     ],
@@ -5720,6 +7992,16 @@
     "ActionPoints": 4,
     "Cooldown": 3,
     "Damage Multiplier": "150",
+    "SkillProperties": {
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -5756,6 +8038,16 @@
     "Cooldown": 3,
     "Damage Multiplier": "100",
     "DamageType": "Piercing",
+    "SkillProperties": {
+      "BLEEDING": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RogueLore 1; WarriorLore 1",
     "Memory Cost": "1",
@@ -5789,6 +8081,24 @@
     "ActionPoints": 5,
     "Cooldown": 4,
     "Damage Multiplier": "150",
+    "SkillProperties": {
+      "AMER_DECAYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vulnerable III",
+        "prefixes": []
+      },
+      "BLEEDING": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_DECAYING_APPLY"
     ],
@@ -5824,6 +8134,24 @@
     "ActionPoints": 6,
     "Cooldown": 4,
     "Damage Multiplier": "110",
+    "SkillProperties": {
+      "BLEEDING": {
+        "params": [
+          "100",
+          "3"
+        ],
+        "name": "Bleeding",
+        "prefixes": []
+      },
+      "AMER_ENTHRALLED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ENTHRALLED_APPLY"
     ],
@@ -5860,6 +8188,16 @@
     "Cooldown": 4,
     "Damage Multiplier": "120",
     "DamageType": "Magic",
+    "SkillProperties": {
+      "AMER_SQUELCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Squelched III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SQUELCHED_APPLY"
     ],
@@ -5893,6 +8231,40 @@
     "Ability": "Ranger",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "FIRST_AID": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "First Aid",
+        "prefixes": []
+      },
+      "RESTED": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Rested",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-1 Battered stack",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-1 Harried stack",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RangerLore 1",
     "Memory Cost": "1",
@@ -5926,6 +8298,16 @@
     "Ability": "Ranger",
     "ActionPoints": 2,
     "Cooldown": 2,
+    "SkillProperties": {
+      "REACTION_SHOT": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "|Reaction Shot|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RangerLore 1",
     "Memory Cost": "1",
@@ -5955,6 +8337,37 @@
     "Ability": "Earth",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "BATTERED_MANIP_1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "1 Battered stack",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_1": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "1 Harried stack",
+        "prefixes": []
+      },
+      "Oilify": {
+        "params": [],
+        "name": "Oilify",
+        "prefixes": []
+      },
+      "AMER_SLOWED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Slowed III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SLOWED_APPLY"
     ],
@@ -5990,6 +8403,29 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "Vaporize": {
+        "params": [],
+        "name": "Vaporize",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-2 Harried stacks",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-2": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-2 Battered stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 1; Polymorph 1",
     "Memory Cost": "1",
@@ -6023,6 +8459,68 @@
     "Ability": "Ranger",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "ARROWHEAD_FIRE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Burning Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ARROWHEAD_WATER": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Water Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ARROWHEAD_BLOOD": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Bloody Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ARROWHEAD_ELECTRIC": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Electric Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ARROWHEAD_POISON": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Poison Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ARROWHEAD_OIL": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Oily Arrows|",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "RangerLore 1",
     "Memory Cost": "1",
@@ -6058,6 +8556,16 @@
     "Damage Multiplier": "80",
     "Damage Range": "5",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 1; EarthSpecialist 1",
     "Memory Cost": "2",
@@ -6089,6 +8597,16 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 6,
+    "SkillProperties": {
+      "WIND_WALKER": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "WIND_WALKER",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 1; RangerLore 1",
     "Memory Cost": "1",
@@ -6137,6 +8655,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6170,6 +8689,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6203,6 +8723,7 @@
     "Stealth": "No",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6236,6 +8757,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6255,6 +8777,16 @@
     "Ability": "Summoning",
     "ActionPoints": 4,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_ENTHRALLED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Subjugated III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_ENTHRALLED_APPLY"
     ],
@@ -6293,6 +8825,24 @@
     "Damage Multiplier": "140",
     "Damage Range": "20",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_TERRIFIED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Terrified III",
+        "prefixes": []
+      },
+      "AMER_WEAKENED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Weakened III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_WEAKENED_APPLY",
       "AMER_TERRIFIED_APPLY"
@@ -6339,6 +8889,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -6359,6 +8910,16 @@
     "Ability": "Fire",
     "ActionPoints": 2,
     "Cooldown": 5,
+    "SkillProperties": {
+      "AMER_FLAMING_CRESCENDO": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Flaming Crescendo",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "FireSpecialist 3",
     "Memory Cost": "2",
@@ -6392,6 +8953,16 @@
     "Ability": "Water",
     "ActionPoints": 5,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_ARCANE_STITCH": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Arcane Stitch",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 3",
     "Memory Cost": "1",
@@ -6428,6 +8999,24 @@
     "Damage Multiplier": "50",
     "Damage Range": "10",
     "DamageType": "Earth",
+    "SkillProperties": {
+      "AMER_CALCIFYING_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Calcifying",
+        "prefixes": []
+      },
+      "AMER_SQUELCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Squelched III",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [
       "AMER_SQUELCHED_APPLY"
     ],
@@ -6460,6 +9049,19 @@
     "Ability": "Death",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "EXPLODE": {
+        "params": [
+          "100",
+          "1",
+          "Projectile_CorpseExplosion_Explosion"
+        ],
+        "name": "EXPLODE",
+        "prefixes": [
+          "TARGET"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "FireSpecialist 1; Necromancy 1",
     "Memory Cost": "1",
@@ -6494,6 +9096,16 @@
     "Ability": "Death",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "BLOOD_BUBBLE": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Blood Bubble",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 1",
     "Memory Cost": "1",
@@ -6527,6 +9139,27 @@
     "Ability": "Summoning",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "DYING": {
+        "params": [
+          "100",
+          "-1",
+          "DoT"
+        ],
+        "name": "DYING",
+        "prefixes": []
+      },
+      "CannibalizeHeal": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Canibalize",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Summoning 1",
     "Memory Cost": "1",
@@ -6560,6 +9193,16 @@
     "Ability": "Summoning",
     "ActionPoints": 0,
     "Cooldown": 2,
+    "SkillProperties": {
+      "SUPERCHARGE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Costly Evolution",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Summoning 1",
     "Memory Cost": "1",
@@ -6593,6 +9236,17 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "Pickup": {
+        "params": [
+          "",
+          "",
+          "RS3_FX_Skills_Air_Apportation_Item_Impact_01"
+        ],
+        "name": "Pickup",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 2",
     "Memory Cost": "1",
@@ -6622,6 +9276,26 @@
     "Ability": "Death",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "Summon": {
+        "params": [
+          "40c6a905-74c3-4d89-9ffe-d3493a22cabd",
+          "10",
+          "-",
+          "Target_DummyTargetSkill"
+        ],
+        "name": "Summon",
+        "prefixes": []
+      },
+      "EXPLODE": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "EXPLODE",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 1; Summoning 1",
     "Memory Cost": "2",
@@ -6670,6 +9344,7 @@
     "Stealth": "No",
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6698,6 +9373,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -6732,6 +9408,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6750,6 +9427,16 @@
     "Cooldown": -1,
     "Memory Cost": "1",
     "Magic Cost": "0",
+    "SkillProperties": {
+      "Resurrect": {
+        "params": [
+          "100",
+          "100"
+        ],
+        "name": "Resurrect",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 3",
     "Icon": "Skill_Decay_LastRites",
@@ -6790,6 +9477,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6819,6 +9507,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -6841,6 +9530,26 @@
     "Damage Multiplier": "150",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -6871,6 +9580,7 @@
     "Ability": "None",
     "ActionPoints": 1,
     "Cooldown": 1,
+    "SkillProperties": {},
     "TieredStatuses": [],
     "Icon": "Skill_Ranger_TacticalRetreat",
     "DisplayNameRef": "Escapist",
@@ -6915,6 +9625,7 @@
     "Magic Cost": "0",
     "Hidden": false,
     "Stealth": "No",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ParsedMemorizationRequirements": {},
@@ -6947,6 +9658,7 @@
     "MemorizationRequirements": "",
     "Stealth": "No",
     "Memory Cost": "0",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "ParsedMemorizationRequirements": {},
     "BaseDescription": "Releases shards on impact, dealing 100% <span class='text-dmg-pierce'>Piercing Damage</span> in target 3m radius.",
@@ -6962,6 +9674,16 @@
     "Damage Multiplier": "175",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "AMER_FINGEROFDEATH_HIT": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Finger of Death",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7005,6 +9727,7 @@
     "Stealth": "No",
     "Damage Multiplier": "100",
     "Damage Range": "10",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7027,6 +9750,26 @@
     "Damage Multiplier": "40",
     "Damage Range": "10",
     "DamageType": "Fire",
+    "SkillProperties": {
+      "AMER_SCORCHED_APPLY": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Scorched",
+        "prefixes": []
+      },
+      "Ignite": {
+        "params": [],
+        "name": "Ignite",
+        "prefixes": []
+      },
+      "Melt": {
+        "params": [],
+        "name": "Melt",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7056,6 +9799,40 @@
     "SkillType": "Shout",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "SHIELDED_PHYSICAL": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "SHIELDED_MAGIC": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Battered stacks",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Harried stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7083,6 +9860,40 @@
     "SkillType": "Shout",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "SHIELDED_PHYSICAL": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "SHIELDED_MAGIC": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Shielded",
+        "prefixes": []
+      },
+      "BATTERED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Battered stacks",
+        "prefixes": []
+      },
+      "HARRIED_MANIP_-3": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "-3 Harried stacks",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7125,6 +9936,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "StatsDescriptionParams": "",
     "ExplodeRadius": 0,
@@ -7152,6 +9964,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "StatsDescriptionParams": "",
     "ExplodeRadius": 0,
@@ -7179,6 +9992,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "StatsDescriptionParams": "",
     "ExplodeRadius": 0,
@@ -7198,6 +10012,16 @@
     "Ability": "None",
     "ActionPoints": 0,
     "Cooldown": 0,
+    "SkillProperties": {
+      "AMER_BLIND_2": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Dazzled II",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7224,6 +10048,16 @@
     "IsEnemySkill": "No",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "AMER_BENEVOLENCE_HIT": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Benevolence",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "UseWeaponDamage": false,
     "UseWeaponProperties": "No",
@@ -7265,6 +10099,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7291,6 +10126,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7318,6 +10154,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7345,6 +10182,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7372,6 +10210,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7393,6 +10232,18 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Physical",
+    "SkillProperties": {
+      "VAMPIRIC_TOUCH": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Vampiric Touch",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -7418,6 +10269,18 @@
     "Ability": "Death",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "Summon": {
+        "params": [
+          "c1cc103d-7e9e-480c-a601-9977a1846430",
+          "10",
+          "-",
+          "Target_DummyTargetSkill"
+        ],
+        "name": "Summon",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 1; Summoning 1",
     "Memory Cost": "0",
@@ -7462,6 +10325,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7495,6 +10359,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7528,6 +10393,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7561,6 +10427,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "ExplodeRadius": 0,
@@ -7580,6 +10447,48 @@
     "Ability": "Polymorph",
     "ActionPoints": 2,
     "Cooldown": 4,
+    "SkillProperties": {
+      "FIRE_SKIN": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Flaming Skin",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ICE_SKIN": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Icy Skin",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "ELECTRIC_SKIN": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Jellyfish Skin",
+        "prefixes": [
+          "SELF"
+        ]
+      },
+      "POISON_SKIN": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "Poisonous Skin",
+        "prefixes": [
+          "SELF"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Polymorph 2",
     "Memory Cost": "2",
@@ -7626,6 +10535,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7640,6 +10550,16 @@
     "Ability": "Water",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_CRYOTHERAPY": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Cryotherapy",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WaterSpecialist 1; RangerLore 1",
     "Memory Cost": "1",
@@ -7674,6 +10594,16 @@
     "Ability": "Earth",
     "ActionPoints": 3,
     "Cooldown": 4,
+    "SkillProperties": {
+      "AMER_OIL_CARAPACE": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Oily Carapace",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "EarthSpecialist 1; WarriorLore 1",
     "Memory Cost": "1",
@@ -7721,6 +10651,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7735,6 +10666,16 @@
     "Ability": "Warrior",
     "ActionPoints": 4,
     "Cooldown": 3,
+    "SkillProperties": {
+      "TAUNTED": {
+        "params": [
+          "100",
+          "1"
+        ],
+        "name": "Taunted",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "WarriorLore 1",
     "Memory Cost": "1",
@@ -7767,6 +10708,19 @@
     "SkillType": "Target",
     "ActionPoints": 3,
     "Cooldown": 2,
+    "SkillProperties": {
+      "EXPLODE": {
+        "params": [
+          "100",
+          "1",
+          "Projectile_AMER_SCRIPT_FaceOfTheFallen"
+        ],
+        "name": "EXPLODE",
+        "prefixes": [
+          "TARGET"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -7795,6 +10749,16 @@
     "Ability": "Air",
     "ActionPoints": 2,
     "Cooldown": 3,
+    "SkillProperties": {
+      "BREATHING_BUBBLE": {
+        "params": [
+          "100",
+          "2"
+        ],
+        "name": "|Breathing Bubble|",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "AirSpecialist 1; WarriorLore 1",
     "Memory Cost": "1",
@@ -7832,6 +10796,16 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "Water",
+    "SkillProperties": {
+      "AMER_HORRIDWILTING_HIT": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "Horrid Wilting",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "MemorizationRequirements": "Necromancy 3; WaterSpecialist 3",
     "Memory Cost": "2",
@@ -7876,6 +10850,7 @@
     "Damage Multiplier": "100",
     "Damage Range": "10",
     "DamageType": "None",
+    "SkillProperties": [],
     "TieredStatuses": {},
     "IsEnemySkill": "No",
     "StatsDescriptionParams": "",
@@ -7889,6 +10864,18 @@
     "SkillType": "Target",
     "ActionPoints": 2,
     "Cooldown": 1,
+    "SkillProperties": {
+      "EXPLODE": {
+        "params": [
+          "100",
+          "0"
+        ],
+        "name": "EXPLODE",
+        "prefixes": [
+          "TARGET"
+        ]
+      }
+    },
     "TieredStatuses": [],
     "Memory Cost": "0",
     "Magic Cost": "0",
@@ -7920,6 +10907,16 @@
     "Cooldown": 3,
     "Memory Cost": "0",
     "Magic Cost": "0",
+    "SkillProperties": {
+      "Resurrect": {
+        "params": [
+          "500",
+          "20"
+        ],
+        "name": "Resurrect",
+        "prefixes": []
+      }
+    },
     "TieredStatuses": [],
     "Icon": "Skill_Source_Resurrect",
     "DisplayNameRef": "Resuscitate",
