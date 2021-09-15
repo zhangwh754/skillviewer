@@ -170,6 +170,46 @@ hiddenSkills = [
     # todo handle this properly. we cannot filter this one out the normal way because the Amer version of this spell has the same string in its name
 
 ]
+
+# manually-overwritten properties, mostly for skills used from items.
+propertyOverrides = {
+    "Projectile_Grenade_WaterBlessedBalloon": {"Icon": "Item_GRN_WaterBalloon_Blessed"},
+    "Projectile_Grenade_BlessedOilFlask": {"Icon": "Item_GRN_OilFlask_Blessed"},
+    "Projectile_Grenade_BlessedIce": {"Icon": "Item_GRN_Ice_Blessed"},
+    "Projectile_Grenade_CursedMolotov": {"Icon": "Item_GRN_Molotov_Cursed"},
+    "ProjectileStrike_Grenade_CursedClusterBomb": {"Icon": "Item_GRN_ClusterBomb_Cursed"},
+}
+apCostOverrides = {
+    "Projectile_Grenade_ArmorPiercing": 3,
+    "Projectile_Grenade_Nailbomb": 3,
+    "Projectile_Grenade_Flashbang": 3,
+    "Projectile_Grenade_Molotov": 3,
+    "Projectile_Grenade_CursedMolotov": 3,
+    "Projectile_Grenade_Love": 3,
+    "Projectile_Grenade_MindMaggot": 3,
+    "Projectile_Grenade_ChemicalWarfare": 3,
+    "Projectile_Grenade_Terror": 3,
+    "Projectile_Grenade_Ice": 3,
+    "Projectile_Grenade_BlessedIce": 3,
+    "Projectile_Grenade_Holy": 3,
+    "Projectile_Grenade_Tremor": 3,
+    "Projectile_Grenade_Taser": 3,
+    "Projectile_Grenade_WaterBalloon": 3,
+    "Projectile_Grenade_WaterBlessedBalloon": 3,
+    "Projectile_Grenade_SmokeBomb": 3,
+    "Projectile_Grenade_MustardGas": 3,
+    "Projectile_Grenade_OilFlask": 3,
+    "Projectile_Grenade_BlessedOilFlask": 3,
+    "Projectile_Grenade_PoisonFlask": 3,
+    "Projectile_Grenade_CursedPoisonFlask": 3,
+    "ProjectileStrike_Grenade_ClusterBomb": 3,
+    "ProjectileStrike_Grenade_CursedClusterBomb": 3,
+}
+for i in apCostOverrides:
+    if i not in propertyOverrides:
+        propertyOverrides[i] = {}
+    propertyOverrides[i]["ActionPoints"] = apCostOverrides[i]
+
 bannedStrings = [
     # Derpy
     "Derpy_StatusDamage",
@@ -600,6 +640,12 @@ def Parse(folders, descriptionOverrides):
     CastFields(skills)
 
     ParseSourceInfusions(skills)
+
+    for skillId in skills:
+        if skillId in propertyOverrides:
+            skill = skills[skillId]
+            for prop in propertyOverrides[skillId]:
+                skill[prop] = propertyOverrides[skillId][prop]
 
     return skills
 
