@@ -37,12 +37,28 @@ function ActionPoint(props) {
 	)
 }
 
+function SourcePoint(props) {
+	return (
+		<div className="action-point">
+			<Icon img={"source_point"} />
+		</div>
+	)
+}
+
 function SkillHeader(props) {
 	let skill = props.skill
-	let ap = skill["ActionPoints"]
+	let apCost = skill["ActionPoints"]
+	let spCost = skill["Magic Cost"]
 
 	let apOrbs = []
-	for (let x = 0; x < parseInt(ap); x++) {
+
+	// add SP indicators
+	for (let x = 0; x < spCost; x++) {
+		apOrbs.push(<SourcePoint key={-x - 1} />)
+	}
+
+	// add AP indicators
+	for (let x = 0; x < apCost; x++) {
 		apOrbs.push(<ActionPoint key={x} />)
 	}
 

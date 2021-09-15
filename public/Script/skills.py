@@ -65,7 +65,7 @@ relevantParams = {
     "id": "",
     "SkillType": "",
     "Ability": "None",
-    "ActionPoints": "0",
+    "ActionPoints": 0,
     "Cooldown": "0",
     "Icon": "",
     "DisplayNameRef": "NO NAME",
@@ -78,6 +78,7 @@ relevantParams = {
     "Damage Range": "10",
     "DamageType": "None",
     "Memory Cost": "0",
+    "Magic Cost": 0,
 
     # manually-added properties
     "TieredStatuses": {},
