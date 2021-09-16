@@ -17,13 +17,19 @@ var app;
 export var data = {
   icons: {},
   mods: {},
-  coreMods: {
+  coreMods: { // todo define externally
+    // "DOSEE": {
+    //   addons: []
+    // },
+    // "EE1": {
+    //   addons: []
+    // },
     "EE_Core": {
       addons: [
         "Epip",
         "Derpy_Tweaks",
       ]
-    }
+    },
   }
 };
 
@@ -140,6 +146,10 @@ class App extends React.Component {
       RESOURCE_PREPPEND + "Script/Output/Data/Mods/Derpy_Tweaks/skills.json",
       RESOURCE_PREPPEND + "Script/Output/Data/Mods/Epip/mod.json",
       RESOURCE_PREPPEND + "Script/Output/Data/Mods/Epip/skills.json",
+      RESOURCE_PREPPEND + "Script/Output/Data/Mods/DOSEE/mod.json",
+      RESOURCE_PREPPEND + "Script/Output/Data/Mods/DOSEE/skills.json",
+      RESOURCE_PREPPEND + "Script/Output/Data/Mods/EE1/mod.json",
+      RESOURCE_PREPPEND + "Script/Output/Data/Mods/EE1/skills.json",
     ]
     let promises = []
 
@@ -169,6 +179,14 @@ class App extends React.Component {
         data.mods["Epip"] = {}
         data.mods["Epip"].metadata = responses[4].data
         data.mods["Epip"].skills = responses[5].data
+
+        data.mods["DOSEE"] = {}
+        data.mods["DOSEE"].metadata = responses[6].data
+        data.mods["DOSEE"].skills = responses[7].data
+
+        data.mods["EE1"] = {}
+        data.mods["EE1"].metadata = responses[8].data
+        data.mods["EE1"].skills = responses[9].data
 
         this.setState({initialized: true})
       }.bind(this))
