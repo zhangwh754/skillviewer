@@ -1218,6 +1218,85 @@ export const statusNames = {
     "AMER_BLIND_APPLY": "Dazzled III",
 }
 
+export const SURFACES = {
+	"WaterFrozen": {
+		"type": "surface",
+		"name": "Ice surface",
+	},
+	"Water": {
+		"type": "surface",
+		"name": "Water surface",
+	},
+	"WaterFrozenBlessed": {
+		"type": "surface",
+		"name": "Blessed Frozen Water surface",
+	},
+	"WaterFrozenCursed": {
+		"type": "surface",
+		"name": "Cursed Frozen Water surface",
+	},
+	"WaterBlessed": {
+		"type": "surface",
+		"name": "Blessed Water surface",
+	},
+	"WaterCursed": {
+		"type": "surface",
+		"name": "Cursed Water surface",
+	},
+	"Lava": {
+		"type": "surface",
+		"name": "Lava surface",
+	},
+	"Fire": {
+		"type": "surface",
+		"name": "Fire surface",
+	},
+	"FireCursed": {
+		"type": "surface",
+		"name": "Cursed Fire surface",
+	},
+	"FireBlessed": {
+		"type": "surface",
+		"name": "Blessed Fire surface",
+	},
+	"WaterCloudElectrified": {
+		"type": "cloud",
+		"name": "Electrified Water cloud",
+	},
+	"WaterElectrified": {
+		"type": "surface",
+		"name": "Electrified Water surface",
+	},
+	"Oil": {
+		"type": "surface",
+		"name": "Oil surface",
+	},
+	"OilBlessed": {
+		"type": "surface",
+		"name": "Blessed Oil surface",
+	},
+	"OilCursed": {
+		"type": "surface",
+		"name": "Cursed Oil surface",
+	},
+	"Poison": {
+		"type": "surface",
+		"name": "Poison surface",
+	},
+	"PoisonCloud": {
+		"type": "cloud",
+		"name": "Poison cloud",
+	},
+	"PoisonCursed": {
+		"type": "surface",
+		"name": "Cursed Poison cloud",
+	},
+	"None": {
+		"type": "surface",
+		"name": "None/Sentinel",
+	},
+}
+
 export const statuses = {
 	PIP_Artifact_DrogsLuck: {name: "Drog's Luck", type: "special", id: "PIP_Artifact_DrogsLuck", icon: "AMER_UNI_Amulet_A"},
 	PIP_Artifact_EyeOfTheStorm: {name: "Eye of The Storm", type: "special", id: "PIP_Artifact_EyeOfTheStorm", icon: "AMER_UNI_Ring_A"},

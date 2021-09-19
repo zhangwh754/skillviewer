@@ -239,6 +239,9 @@ function CreateSkillPropertyLine(id, data) {
 		"Equalize": "Equalizes health.",
 		"EXPLODE": "Explodes the target.",
 		"CanBackstab": "Can backstab.",
+		"ADRENALINE": "Instantly gain {3} AP, and lose {4} AP next turn.",
+		"AlwaysHighGround": "Is always cast from high ground.",
+		"SHACKLES_OF_PAIN": "Applies Shackles of Pain for {1} turn(s).", // hardcoded status.
 
 		"Sabotage": "Explodes {0} random grenade(s)/arrow(s) of the target.",
 		"CreateSurface": "{3}% chance to create a {0}m {2} surface for {1} turn(s)",
@@ -248,6 +251,33 @@ function CreateSkillPropertyLine(id, data) {
 	}
 
 	let str = "Applies " +  data.name
+
+	if (id == "CreateSurface" || id == "TargetCreateSurface") {
+
+		let surfaceName = data.params[2] + " surface";
+		let surfaceData = miscData.SURFACES[data.params[2]]
+
+		if (surfaceData) {
+			surfaceName = surfaceData.name
+		}
+		else
+		{
+			console.log(data.params[2])
+		}
+
+		let params = [...data.params]
+		params[2] = surfaceName
+		
+		// removing surfaces
+		if (surfaceName == "None") {
+			return "Clears surfaces in a {0}m radius."
+		}
+
+		// if there is no chance param, or 100% chance - don't show chance
+		if (params.length == 3 || params[3] == "100") {
+			return utils.format("Creates a {0}m {2} for {1} turn(s).", ...params)
+		}
+	}
 
 	// TODO
 	if (str.includes("Arrows")) {
