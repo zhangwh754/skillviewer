@@ -132,6 +132,7 @@ hiddenSkills = [
     # "Target_TimeWarp",
     # "Target_PetrifyingTouch",
 
+    "Storm_Lightning",
     "Storm_Ethereal",
     "Target_BloatedCorpse_TheSupplicant",
     "Shout_AcclimateElectricFence",
