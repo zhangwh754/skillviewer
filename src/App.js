@@ -163,7 +163,7 @@ class App extends React.Component {
     for (let x = 0; x < requests.length; x++) {
       promises.push(axios.get(requests[x]))
     }
-    
+
     axios.all(promises)
       .then(async function(responses) {
 
@@ -210,7 +210,7 @@ class App extends React.Component {
       </div>
     );
   }
-  
+
 }
 
 class Sidebar extends React.Component {
@@ -256,7 +256,7 @@ class Sidebar extends React.Component {
         <div className="checkboxes-container">
           {checkboxes}
         </div>
-        
+
       </div>
     )
   }
